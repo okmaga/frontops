@@ -1,10 +1,10 @@
 services:
   date:
-    image: okmaga/result
+    image: okmaga/result-date
     build:
       dockerfile: date.dockerfile
   result:
-    image: okmaga/result-date
+    image: okmaga/result
     build: .
     ports:
       - "3000:3000"
